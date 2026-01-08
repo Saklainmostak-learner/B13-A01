@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color:#FFFFFF ;
     margin: 0;
@@ -63,3 +66,84 @@ header .container{
     background-color: #259e57;
 }
 /* header close(improvement need) */
+
+/* Hero section */
+.hero-section{
+    position: relative;
+    height: 600px;
+    background-image: url('../assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.overlap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+.hero-container{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 65px;
+    text-transform: capitalize;
+}
+.hero-bdg{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 14px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color:#30B868;
+    font-weight: 500;
+}
+.hero-dot{
+    width: 8px;
+    height: 8px;
+    background: #30B868;
+    border-radius: 50%;
+}
+.hero-title{
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 15px;
+}
+.hero-title span{
+    color:#30B868 ;
+}
+.hero-sub{
+    max-width: 580px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    text-transform: initial;
+    line-height: 20px;
+}
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.btn-vault{
+    background-color:#30B868;
+    border: 1px solid #30B868 ;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.btn-wrk{
+    background-color: transparent;
+    border: 1px solid #FFFFFF ;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+/* hero section end {need more} */
