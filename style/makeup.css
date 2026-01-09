@@ -214,7 +214,73 @@ header .container{
 /* sob kichutei ektu ektu kore lakings ktao figmar sathe milteche na.  */
 /* cardsection end( need more) */
 
-
-
-
+/* brain section */
+.brain-section{
+    padding: 115px;
+    background: #FFFFFF;
+}
+.brain-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+.brain-img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+.brain-text{
+    width: 50%;
+}
+.brain-text span{
+    font-size: 16px;
+    color: #30B868;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.brain-text h2{
+    font-size: 35px;
+    font-weight: bold;
+    color: #001931;
+    line-height: 40px;
+    text-transform: capitalize;
+    text-shadow:2px 1px  #00193176 ;
+}
+.brain-text p{
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: .8px;
+    font-weight: 400;
+}
+.brain-list{
+    list-style: none;
+    padding: 0;
+}
+.brain-list li{
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #001931;
+    line-height: 15px;
+}
+.brain-list li::before{
+    background-image: url('../assets/CheckCircle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    content:"";
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.brain-list li:hover::before{
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 5px rgba(30, 171, 89, 0.68));    /*great*/
+}
 
