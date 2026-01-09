@@ -147,3 +147,74 @@ header .container{
     color: #FFFFFF;
 }
 /* hero section end {need more} */
+
+/* card section  */
+.card-section{
+    background: #FFFFFF;
+    padding:0 120px ;
+    text-align: center;
+}
+.card-section h2{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    color: #001931;
+}
+.card-section p{
+    max-width:660px ;
+    margin: 0 auto 35px;
+    font-size: 15px;
+    color: #001931;
+    line-height: 24px;
+}
+.cards{
+    display:flex;
+    max-width: 1200px;
+    gap: 25px;
+    justify-content: center;
+}
+.cards-of-card{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 28px 22px;
+    border-radius: 10px;
+    border: 1px solid #eae4e4;
+    box-shadow: 0 8px 16px #eae4e4;
+    text-align: center;
+}
+.card-icon{
+    width: 56px;
+    height:56px;
+    background-color: #F95555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px auto 15px;
+}
+.card-icon img{
+    height: 25px;
+    width: 25px;
+    display: block;
+}
+.cards-of-card h3{
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color:#001931;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+.cards-of-card p{
+    margin: auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: #001931;
+}
+/* sob kichutei ektu ektu kore lakings ktao figmar sathe milteche na.  */
+/* cardsection end( need more) */
+
+
+
+
+
