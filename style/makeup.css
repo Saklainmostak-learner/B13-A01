@@ -4,7 +4,7 @@
 body{
     background-color:#FFFFFF ;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Ubuntu, sans-serif;
 }
 /* Header style */
 header{
@@ -23,7 +23,7 @@ header .container{
     margin: 0 auto;
 }
 .logo img {
-    height: 40px;
+    height: 45px;
     width: auto;
     display: block;
 }
@@ -31,8 +31,19 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 55px;
+    gap: 40px;
+    width: 100%;
+}
+
+
+/* try to fixed */
+
+
+
+.nav-bar nav{
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 .nav-content{
     list-style: none;
@@ -50,7 +61,7 @@ header .container{
     transition: all .3s ease; 
 }
 .nav-content a:hover{
-    color: #2f7a775e;
+    color: #2f7a78;
 }
 .nav-btn button{
     background-color: #30B868;
@@ -83,6 +94,7 @@ header .container{
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
 }
 .hero-container{
     position: relative;
@@ -102,11 +114,18 @@ header .container{
     color:#30B868;
     font-weight: 500;
 }
-.hero-dot{
-    width: 8px;
-    height: 8px;
-    background: #30B868;
-    border-radius: 50%;
+/* heroicon */
+.hero-bdg-icon{          
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%;           
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-bdg-icon i{
+    font-size: 16px;
+    color: #30B868;
 }
 .hero-title{
     font-size: 60px;
@@ -126,16 +145,24 @@ header .container{
 .hero-btn{
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 .btn-vault{
     background-color:#30B868;
     border: 1px solid #30B868 ;
-    padding: 16px;
+    padding:12px 16px;
     border-radius: 6px;
     font-size: 15px;
     font-weight: 400;
     color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-vault:hover{
+    background-color:#259e57;
 }
 .btn-wrk{
     background-color: transparent;
@@ -145,13 +172,25 @@ header .container{
     font-size: 15px;
     font-weight: 400;
     color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
+.btn-wrk:hover{
+    background-color: rgba(255, 255, 255, 0.283);
+    color: #30B868;
+    border-color: #30B868;
+    transform: scale(1);
+}
+
 /* hero section end {need more} */
 
 /* card section  */
 .card-section{
     background: #FFFFFF;
-    padding:0 120px ;
+    padding:80px 120px ;
     text-align: center;
 }
 .card-section h2{
@@ -181,6 +220,12 @@ header .container{
     border: 1px solid #eae4e4;
     box-shadow: 0 8px 16px #eae4e4;
     text-align: center;
+    transition: all 0.3s ease;
+}
+.cards-of-card:hover{
+    transform: scale(1.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+
 }
 .card-icon{
     width: 56px;
@@ -250,7 +295,7 @@ header .container{
     text-shadow:2px 1px  #00193176 ;
 }
 .brain-text p{
-    font-size: 10px;
+    font-size: 13px;
     line-height: 20px;
     letter-spacing: .8px;
     font-weight: 400;
@@ -374,8 +419,9 @@ header .container{
     color: #FFFFFF;
 }
 hr{
-    background-color: #FFFFFF;
-    margin-bottom: 24px;
+    border: none;
+    border-top: 2px solid #FFFFFF;
+    margin-bottom: 24px 0;
 }
 .ftr-bottom{
     font-size: 18px;
