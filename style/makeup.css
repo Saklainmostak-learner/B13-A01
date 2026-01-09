@@ -281,6 +281,55 @@ header .container{
 }
 .brain-list li:hover::before{
     transform: scale(1.25);
-    filter: drop-shadow(0 0 5px rgba(30, 171, 89, 0.68));    /*great*/
+    filter: drop-shadow(0 0 5px rgba(30, 171, 89, 0.68)); 
 }
-
+/* brain section end (it was great ) */
+.last-section{
+    background-color: #FFFFFF;
+    padding: 100px 30px;
+}
+.think-box{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #F7F6F2;
+    padding: 70px 30px;
+    text-align: center;
+    width: 85%;
+    border-radius: 16px;
+}
+.think-box h2{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #001931;
+}
+.last-1st{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #001931;
+    margin-bottom: 24px;
+}
+.last-btn{
+    border: none;
+    background:#30B868;
+    padding: 12px 16px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center; 
+    gap: 10px;
+}
+.last-btn:hover{
+    background-color: #259e57;
+}
+.last-2nd{
+    margin-top: 24px;
+    font-size: 17px;
+    color: #001931;
+    font-weight: 400;
+}
+/* last section end */
